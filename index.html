@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KO Capstone Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div>
+        <div class="brand">KO</div>
+        <h1>Coca-Cola Capstone Dashboard</h1>
+        <p>Simple scenario dashboard tied to the capstone outputs.</p>
+      </div>
+      <div class="manifest" id="manifestBox"></div>
+    </header>
+
+    <section class="controls card">
+      <div>
+        <label for="scenarioSelect">Scenario</label>
+        <select id="scenarioSelect"></select>
+      </div>
+      <div>
+        <label for="metricSelect">Chart Metric</label>
+        <select id="metricSelect">
+          <option value="Revenue">Revenue</option>
+          <option value="EBITDA">EBITDA</option>
+          <option value="NetIncome">Net Income</option>
+          <option value="Cash">Cash</option>
+          <option value="TermDebt">Term Debt</option>
+          <option value="FreeCashFlow">Free Cash Flow</option>
+        </select>
+      </div>
+      <div class="note" id="scenarioNotes"></div>
+    </section>
+
+    <section class="kpis" id="kpiGrid"></section>
+
+    <section class="grid">
+      <div class="card chart-card">
+        <div class="card-head">
+          <h2>Selected Scenario Trend</h2>
+          <span id="selectedStatus" class="status"></span>
+        </div>
+        <canvas id="trendChart"></canvas>
+      </div>
+      <div class="card chart-card">
+        <div class="card-head">
+          <h2>Revenue Comparison</h2>
+          <span class="muted">Base vs selected</span>
+        </div>
+        <canvas id="compareChart"></canvas>
+      </div>
+    </section>
+
+    <section class="grid lower">
+      <div class="card">
+        <div class="card-head"><h2>Income Statement</h2><span class="muted">$mm</span></div>
+        <div class="table-wrap"><table id="incomeTable"></table></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Balance Sheet</h2><span class="muted">$mm</span></div>
+        <div class="table-wrap"><table id="balanceTable"></table></div>
+      </div>
+    </section>
+
+    <section class="grid lower">
+      <div class="card">
+        <div class="card-head"><h2>Cash Flow</h2><span class="muted">$mm</span></div>
+        <div class="table-wrap"><table id="cashTable"></table></div>
+      </div>
+      <div class="card diagnostics-card">
+        <div class="card-head"><h2>Diagnostics</h2><span class="muted">Run checks</span></div>
+        <div id="diagSummary" class="diag-summary"></div>
+        <div class="table-wrap"><table id="diagTable"></table></div>
+      </div>
+    </section>
+  </div>
+  <script src="dashboard_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
