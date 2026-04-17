@@ -14,12 +14,18 @@
 body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,#fff 0,#f7f7f8 180px);color:var(--text)}
 .app{max-width:1380px;margin:0 auto;padding:28px 20px 40px}
 .hero{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}
-.hero-left{display:flex;align-items:center;gap:18px}
+.hero-left{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
 .coke-logo{
   display:block;
   width:auto !important;
-  height:80px !important;
-  max-height:80px !important;
+  height:95px !important;
+  max-height:95px !important;
+  margin-top:-6px;
 }
 h1{margin:12px 0 8px;font-size:32px}
 p{margin:0;color:var(--muted)}
