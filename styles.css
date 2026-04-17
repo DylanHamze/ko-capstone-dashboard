@@ -15,7 +15,12 @@ body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(
 .app{max-width:1380px;margin:0 auto;padding:28px 20px 40px}
 .hero{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}
 .hero-left{display:flex;align-items:center;gap:18px}
-.coke-logo{width:120px;height:auto;object-fit:contain;display:block}
+.coke-logo{
+  width:80px;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
 h1{margin:12px 0 8px;font-size:32px}
 p{margin:0;color:var(--muted)}
 .card,.manifest{background:var(--card);border:1px solid var(--border);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
