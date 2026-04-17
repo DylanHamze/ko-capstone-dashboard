@@ -79,5 +79,11 @@ thead th{background:#fff7f7;color:#7f1d1d;font-weight:800;position:sticky;top:0}
 .badge.pass{background:#ecfdf3;color:var(--green)}
 .badge.warn{background:#fff7e8;color:var(--amber)}
 .badge.fail{background:#fff1f2;color:var(--deep)}
+.units-note{
+  margin-top:6px;
+  font-size:13px;
+  color:var(--muted);
+  font-style:italic;
+}
 @media (max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}.manifest{min-width:0}}
 @media (max-width:700px){.kpis{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:column}h1{font-size:28px}}
