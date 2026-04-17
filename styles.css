@@ -17,6 +17,7 @@ body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(
 .hero-left{display:flex;align-items:center;gap:18px}
 .coke-logo{
   width:80px;
+  max-height:40px;
   height:auto;
   object-fit:contain;
   display:block;
